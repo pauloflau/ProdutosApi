@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.jmp.entities.Categoria;
 
+
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Integer>{
-
 }

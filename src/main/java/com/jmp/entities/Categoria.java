@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -16,9 +18,10 @@ public class Categoria {
 	
 	@Id
 	@Column(name="idcategoria")
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private Integer idCategoria;
 	
-	@Column(name = "nome", length = 50, nullable = false, unique = true )
+	@Column(name = "nome")
 	private String nome;
 	
 	//one classe que estou e many a Outra classe
