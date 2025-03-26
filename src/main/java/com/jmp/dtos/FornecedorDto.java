@@ -5,7 +5,8 @@ public class FornecedorDto {
 	
 	private Integer idFornecedor;
 	private String nome;
-	private String cnpj;
+	//private String cnpj;
+	
 	public Integer getIdFornecedor() {
 		return idFornecedor;
 	}
@@ -18,12 +19,13 @@ public class FornecedorDto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCnpj() {
+	/*public String getCnpj() {
 		return cnpj;
 	}
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
-	}
+	}*/
+	
 	
 	
 }

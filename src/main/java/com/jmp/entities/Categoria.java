@@ -2,8 +2,6 @@ package com.jmp.entities;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -57,7 +55,7 @@ public class Categoria {
 	}
 	@Override
 	public String toString() {
-		return "Categoria [idCategoria=" + idCategoria + ", nome=" + nome + ", produtos=" + produtos + "]";
+		return "Categoria [idCategoria=" + idCategoria + ", nome=" + nome  + "]";
 	}
 	
 }

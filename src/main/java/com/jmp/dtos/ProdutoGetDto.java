@@ -7,6 +7,9 @@ public class ProdutoGetDto {
 	private String nome;
 	private BigDecimal preco;
 	private Integer quantidade;
+	private String fornecedor;
+	private String categoria;
+	
 	public Integer getIdProduto() {
 		return idProduto;
 	}
@@ -31,11 +34,25 @@ public class ProdutoGetDto {
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
+
+	
+	
+	
+	public String getFornecedor() {
+		return fornecedor;
+	}
+	public void setFornecedor(String fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+	public String getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
 	@Override
 	public String toString() {
 		return "ProdutoGetDto [idProduto=" + idProduto + ", nome=" + nome + ", preco=" + preco + ", quantidade="
-				+ quantidade + "]";
+				+ quantidade + ", fornecedor=" + fornecedor + ", categoria=" + categoria + "]";
 	}
-	
-	
 }

@@ -29,12 +29,12 @@ public class Produto {
 	@Column(name = "quantidade")
 	private Integer quantidade;
 	
-	@ManyToOne //many classe que estou e one a Outra classe
+	@ManyToOne//many classe que estou e one a Outra classe
 	@JoinColumn(name="idcategoria") //especifico um nome para chave estrangeira
 	private Categoria categoria;
 	
 	@ManyToOne
-	@JoinColumn(name="idfornecedor") 
+	@JoinColumn(name="idfornecedor")
 	private Fornecedor fornecedor;
 	
 	public Produto() {
@@ -103,8 +103,10 @@ public class Produto {
 	@Override
 	public String toString() {
 		return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade
-				+ ", categoria=" + categoria + ", fornecedor=" + fornecedor + "]";
+				+  "]";
 	}
+
+	
 	
 	
 }
