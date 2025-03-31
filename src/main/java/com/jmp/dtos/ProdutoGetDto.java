@@ -33,10 +33,7 @@ public class ProdutoGetDto {
 	}
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
-	}
-
-	
-	
+	}	
 	
 	public String getFornecedor() {
 		return fornecedor;
